@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Description Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0.83em 0px;
+    font-size: 3rem;
+    position: relative;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  }
+  
+  h1::after {
+    content: "";
+    position: absolute;
+    bottom: -4px; /* Adjust the position of the line as needed */
+    left: 0;
+    width: calc(100% / 4); /* Set the width to 1/6 of the container */
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  p {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    position: relative;
+
+  }
+  
+  p::after {
+    content: "";
+    position: absolute;
+    bottom: -4px; /* Adjust the position of the line as needed */
+    left: 0;
+    width: calc(100% / 2); /* Set the width to 1/6 of the container */
+    height: 1px;
+    background-color: #ccc;
+  }
+
+  h3 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  }
+  h2{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+
+  }
+</style>
+  
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+                
+        <a href="index.html" class="logo"><img src="Warner bros logo.png" alt="Warner Bros. Logo"></a>
+        <button class="nav-toggle" onclick="toggleNav()">&#9776;</button>
+    
+        <nav>
+        <a href="movies.html">Movies</a>
+        <a href="tvshows.html">TV Shows</a>
+        <a href="games.html">Games & Apps</a>
+        <a href="collection.html">Collections</a>
+        <a href="feedback.html">Feedback</a>
+        </nav>
+        <script>
+            function toggleNav() {
+              var nav = document.querySelector('nav');
+                  nav.classList.toggle('show');
+            }
+        </script>
+        </div>
+        </header>
+
+
+  <main>
+    <div class="product-info">
+      <div class="product-image">
+        <img src="Kimetsu.jpg" alt="Product Image">
+      </div>
+      <div class="product-details">
+        <h1>Kimetsu no Yaiba</h1>
+        <p>Two and a half years later, Naruto returns from his training with Jiraiya. The Akatsuki starts kidnapping the hosts of the powerful Tailed Beasts. Team 7 and other Leaf ninja fight against them and search for their teammate Sasuke. The Akatsuki succeeds in capturing and extracting seven of the Tailed Beasts, killing all the hosts except Gaara, who is now the Kazekage. Meanwhile, Sasuke betrays Orochimaru and faces Itachi to take revenge. After Itachi dies in battle, Sasuke learns from the Akatsuki founder Tobi that Itachi had been ordered by Konoha's superiors to destroy his clan to prevent a coup; he accepted, on the condition that Sasuke would be spared. Devastated by this revelation, Sasuke joins the Akatsuki to destroy Konoha in revenge. As Konoha ninjas defeat several Akatsuki members, the Akatsuki figurehead leader, Nagato, kills Jiraiya and devastates Konoha, but Naruto defeats and redeems him, earning the village's respect and admiration.
+
+          With Nagato's death, Tobi, disguised as Madara Uchiha (one of Konoha's founding fathers), announces that he wants to capture all nine Tailed Beasts to cast an illusion powerful enough to control all humanity and achieve world peace. The leaders of the five ninja villages refuse to help him and instead join forces to confront his faction and allies. That decision results in a Fourth Shinobi World War between the combined armies of the Five Great Countries (known as the Allied Shinobi Forces) and Akatsuki's forces of zombie-like ninjas. The Five Kage try to keep Naruto, unaware of the war, in a secret island turtle near Kumogakure (Hidden Cloud Village), but Naruto finds out and escapes from the island with Killer Bee, the host of the Eight-Tails. At that time, Naruto—along with the help of Killer Bee—gains control of his Tailed Beast and the two of them head for the battlefield.</p>
+        <p>Price: $199.99</p>
+        <p>Director:Masashi Kishimoto</p> 
+        <p>Writers:Masashi Kishimoto</p>
+        <p>Stars:Jamie Simone, Mary Elizabeth McGlynn, Jeff Nimoy, Junko Takeuchi, Noriaki Sugiyama
+          Chie Nakamura
+          Kazuhiko Inoue
+          Hideo Ishikawa
+          Hochu Otsuka
+          Masako Katsuki
+          Kujira
+          Akira Ishida
+          Nana Mizuki
+          Maile Flanagan
+          Yuri Lowenthal
+          Kate Higgins
+          Dave Wittenberg
+          Crispin Freeman
+          David Lodge
+          Debi Mae West
+          Liam O'Brien
+          Stephanie Sheh
+          Steven Blum</p> 
+        
+      </div>
+    </div>
+    <h1>Naruto Trailers</h1>
+      <div class="trailer-board">
+        <div class="video-container">
+          <video src="Naruto video trailer clip.mp4" controls></video>
+          <h3 class="video-title">Naruto Trailer 1</h3>
+        </div>
+      </div>
+      <div class="trailer-board">
+        <div class="video-container">
+          <video src="Naruto Wind Opening.mp4" controls></video>
+          <h3 class="video-title">Naruto Ending Song 2</h3>
+        </div>
+      </div>
+
+      <div class="trailer-board">
+        <div class="video-container">
+          <video src="Naruto video trailer clip.mp4" controls></video>
+          <h3 class="video-title">Naruto Trailer 3</h3>
+        </div>
+      </div>
+
+      <div class="trailer-board">
+        <div class="video-container">
+          <video src="Naruto video trailer clip.mp4" controls></video>
+          <h3 class="video-title">Naruto Trailer 4</h3>
+        </div>
+      </div>
+
+
+      <div class="ratings-board">
+        <h2>Ratings and Reviews</h2>
+        <div class="rating">
+          <h3>Rating: <span class="stars">★★★★☆</span></h3>
+          <p>(10.2Billion)</p>
+          
+        </div>
+        <div class="rating">
+          <h3>Rating: <span class="stars">★★★☆☆</span></h3>
+          <p>(5.2Million)</p>
+          
+        </div>
+        <div class="rating">
+          <h3>Rating: <span class="stars">★★★</span></h3>
+          <p>(101)</p>
+          
+        </div>
+        <div class="rating">
+          <h3>Rating: <span class="stars">★</span></h3>
+          <p>(0)</p>
+        
+        </div>
+        <!-- Add more ratings and reviews as needed -->
+      </div>
+
+      <div class="comment-section">
+        <h2>Customer Comments</h2>
+        <div class="comment">
+          <h3>Kakashi Hatake</h3>
+          <p>Great movie! I really enjoyed the storyline and the performances.</p>
+          <p><em>Posted on May 15, 2023</em></p>
+        </div>
+        <div class="comment">
+          <h3>Minato Namikaze</h3>
+          <p>This movie exceeded my expectations. Highly recommended!</p>
+          <p><em>Posted on May 20, 2023</em></p>
+        </div>
+        <div class="comment">
+          <h3>Kushina Uzumaki</h3>
+          <p>Literally the best piece i have seen in my life, i choose not to ever wash my eyes again. For if i were to wash them they would lay bare to emptiness</p>
+          <p><em>Posted on May 20, 2023</em></p>
+        </div>
+
+        <div class="comment">
+          <h3>Sasuke Uchiha</h3>
+          <p>Fun Fact, i am an actor in this movie, it was great being a part of the team, Thank you to everyone would took part in this masterpiece. You guys were the best. Ohh and lol, thanks Orochimaru for training me how to use a sword, i know i havent said it, and yes i shall be keeping the Snake Sword btw hehe.</p>
+          <p><em>Posted on May 20, 2023</em></p>
+        </div>
+        <!-- Add more comments as needed -->
+      </div>
+      
+
+    <div class="similar-movies">
+      <h2>Similar Movies</h2>
+      
+            <div class="movie-container">
+            <section class="movie-card">
+                <div class="movie-card-img">
+                    <a href="Naruto Movie Description.html">
+                        <img src="Naruto1.jpg" alt="Mummies 2023">
+                    </a>
+                </div>
+                <h3>Naruto: The Tale Of Uzumaki Naruto</h3>
+                
+            </section>
+            
+            <section class="movie-card">
+                <div class="movie-card-img">
+                    <a href="#">
+                        <img src="Plane 2023 image.jpg" alt="Plane 2023">
+                    </a>
+                </div>
+                <h3>Plane</h3>
+
+                
+         
+            </section>
+        
+            <section class="movie-card">
+                <div class="movie-card-img">
+                    <a href="#">
+                        <img src="Godzilla.jpg" alt="John Wick 4">
+                    </a>
+                </div>
+                <h3>Godzilla</h3>
+                
+            </section>
+
+            <section class="movie-card">
+                <div class="movie-card-img">
+                    <a href="#">
+                        <img src="Flash 2023 image.jpg" alt="John Wick 4">
+                    </a>
+                </div>
+                
+                <h3>The Flash</h3>
+            </section>
+            
+            <section class="movie-card">
+                <div class="movie-card-img">
+                    <a href="#">
+                        <img src="Black Adam 2023 image.jpg" alt="Black Adam 2023">
+                    </a>
+                </div>
+                
+                <h3>Black Adam</h3>
+            </section>
+            <section class="movie-card">
+                <div class="movie-card-img">
+                    <a href="#">
+                        <img src="Batman.jpg" alt="Flash">
+                    </a>
+                </div>
+                <h3>The Batman</h3>
+                
+            </section>
+            
+            </div>
+    </div>
+  </main>
+
+  <footer>
+      <p>&copy; 2023 Warner Bros. Entertainment Inc. All rights reserved.</p>
+  </footer>
+
+</body>
+<footer class="footer">
+  <div class="footer-content">
+      <div class="footer-section contact-details">
+          <h3>Contact Details</h3>
+          <p>
+              Warner Bros. Entertainment Inc.<br>
+              3400 W. Riverside Drive<br>
+              Burbank, CA 91505<br>
+              Phone: (818) 954-6000<br>
+              Email: contact@warnerbros.com
+          </p>
+      </div>
+      <div class="footer-section quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      &copy; 2023 Warner Bros. Entertainment Inc. All rights reserved.
+  </div>
+</footer>
+</html>

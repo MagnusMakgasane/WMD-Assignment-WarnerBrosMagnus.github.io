@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Warner Bros.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            
+            <a href="index.html" class="logo"><img src="Warner bros logo.png" alt="Warner Bros. Logo"></a>
+            <button class="nav-toggle" onclick="toggleNav()">&#9776;</button>
+
+            <nav>
+                <a href="movies.html">Movies</a>
+                <a href="tvshows.html">TV Shows</a>
+                <a href="games.html">Games & Apps</a>
+                <a href="collection.html">Collections</a>
+                <a href="feedback.html">Feedback</a>
+            </nav>
+            <script>
+                function toggleNav() {
+                  var nav = document.querySelector('nav');
+                  nav.classList.toggle('show');
+                }
+                </script>
+        </div>
+    </header>
+
+    <main>
+        <h1>Feedback</h1>
+        <p>We appreciate your feedback! Please fill out the form below to share your thoughts with us.</p>
+        <form id="feedback-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section contact-details">
+                <h3>Contact Details</h3>
+                <p>
+                    Warner Bros. Entertainment Inc.<br>
+                    3400 W. Riverside Drive<br>
+                    Burbank, CA 91505<br>
+                    Phone: (818) 954-6000<br>
+                    Email: contact@warnerbros.com
+                </p>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Warner Bros. Entertainment Inc. All rights reserved.
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('feedback-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Your feedback has been submitted. Thank you!');
+            // TODO: Add your code to handle form submission, e.g., send data to the server.
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+    
+

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Shows - Warner Bros.</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .tvshow-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .tvshow {
+            flex: 0 0 calc(33% - 20px);
+            margin-bottom: 20px;
+        }
+
+        .tvshow img {
+            width: 100%;
+            height: auto;
+        }
+
+        .tvshow h3 {
+            text-align: center;
+        }
+
+        .tvshow-description {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            
+            <a href="index.html" class="logo"><img src="Warner bros logo.png" alt="Warner Bros. Logo"></a>
+            <button class="nav-toggle" onclick="toggleNav()">&#9776;</button>
+
+            <nav>
+                <a href="movies.html">Movies</a>
+                <a href="tvshows.html">TV Shows</a>
+                <a href="games.html">Games & Apps</a>
+                <a href="collection.html">Collections</a>
+                <a href="feedback.html">Feedback</a>
+            </nav>
+            <script>
+                function toggleNav() {
+                  var nav = document.querySelector('nav');
+                  nav.classList.toggle('show');
+                }
+                </script>
+        </div>
+    </header>
+
+    <main>
+    <h1>Teen Shows </h1>
+    <div class="movie-container">
+    <section class="movie-card">
+        <div class="movie-card-img">
+            <a href="Kimetsu no Yaiba Tv Show Description.html">
+                <img src="Kimetsu.jpg" alt="Mummies 2023">
+            </a>
+        </div>
+        <h3>Kimetsu no yaiba</h3>
+    </section>
+    
+    <section class="movie-card">
+        <div class="movie-card-img">
+            <a href="#">
+                <img src="Maid.jpg" alt="Plane 2023">
+            </a>
+        </div>
+        <h3>Maid</h3>
+    </section>
+
+    <section class="movie-card">
+        <div class="movie-card-img">
+            <a href="#">
+                <img src="Demonslayer.jpg" alt="Plane 202">
+            </a>
+        </div>
+        <h3>Demon Slayer</h3>
+    </section>
+    
+    <section class="movie-card">
+        <div class="movie-card-img">
+            <a href="#">
+                <img src="TheGoodDoctor.jpg" alt="John Wick 4">
+            </a>
+        </div>
+        <h3>The Good Doctor</h3>
+    </section>
+    
+    <section class="movie-card">
+        <div class="movie-card-img">
+            <a href="#">
+                <img src="StartUp.jpg" alt="Black Adam 2023">
+            </a>
+        </div>
+        <h3>Start Up</h3>
+    </section>
+    <section class="movie-card">
+        <div class="movie-card-img">
+            <a href="#">
+                <img src="Ozarkphoto.webp" alt="John Wick 4">
+            </a>
+        </div>
+        <h3>Ozark</h3>
+    </section>
+    
+    </div>
+    
+                <h1>Family Shows</h1>
+                <div class="movie-container">
+                    <section class="movie-card">
+                        <div class="movie-card-img">
+                            <a href="Mummies Movie Description.html">
+                                <img src="Tom wa Jerry des.jpg" alt="Mummies 2023">
+                            </a>
+                        </div>
+                        <h3>Tom and Jerry</h3>
+                    </section>
+                    
+                    <section class="movie-card">
+                        <div class="movie-card-img">
+                            <a href="#">
+                                <img src="SD.jpg" alt="Plane 2023">
+                            </a>
+                        </div>
+                        <h3>Super dogs</h3>
+                    </section>
+
+                    <section class="movie-card">
+                        <div class="movie-card-img">
+                            <a href="#">
+                                <img src="Ansatsu Kyoushitsu.jpg" alt="Plane 2023">
+                            </a>
+                        </div>
+                        <h3>Ansatsu Kyoushitsu</h3>
+                    </section>
+                    
+                    <section class="movie-card">
+                        <div class="movie-card-img">
+                            <a href="#">
+                                <img src="YouNetflix.webp" alt="John Wick 4">
+                            </a>
+                        </div>
+                        <h3>You</h3>
+                    </section>
+                    
+                    <section class="movie-card">
+                        <div class="movie-card-img">
+                            <a href="#">
+                                <img src="Teen Titans Go image.webp" alt="Black Adam 2023">
+                            </a>
+                        </div>
+                        <h3>Teen Titans Go</h3>
+                    </section>
+                    <section class="movie-card">
+                        <div class="movie-card-img">
+                            <a href="#">
+                                <img src="Bridgerton.jpg" alt="John Wick 4">
+                            </a>
+                        </div>
+                        <h3>Bridgerton</h3>
+                    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Warner Bros. Entertainment Inc. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const tvshows = document.querySelectorAll('.tvshow a');
+        tvshows.forEach(tvshow => {
+            tvshow.addEventListener('click', event => {
+                event.preventDefault();
+                const description = tvshow.parentElement.querySelector('.tvshow-description');
+                description.style.display = description.style.display === 'block' ? 'none' : 'block';
+
+            });
+        });
+    </script>
+</body>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section contact-details">
+            <h3>Contact Details</h3>
+            <p>
+                Warner Bros. Entertainment Inc.<br>
+                3400 W. Riverside Drive<br>
+                Burbank, CA 91505<br>
+                Phone: (818) 954-6000<br>
+                Email: contact@warnerbros.com
+            </p>
+        </div>
+        <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2023 Warner Bros. Entertainment Inc. All rights reserved.
+    </div>
+</footer>
+
+</html>

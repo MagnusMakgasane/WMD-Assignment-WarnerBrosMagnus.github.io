@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Warner Bros.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/5v5zSPATw8D0Zt5/5P5z5xm2d5cb8jc8a2+5J7" crossorigin="anonymous">
+</head>
+    <style>
+        .movie{
+            display: flex;
+            width: fit-content;
+            gap: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    <div class="header-container">
+            
+    <a href="index.html" class="logo"><img src="Warner bros logo.png" alt="Warner Bros. Logo"></a>
+    <button class="nav-toggle" onclick="toggleNav()">&#9776;</button>
+
+    <nav>
+    <a href="movies.html">Movies</a>
+    <a href="tvshows.html">TV Shows</a>
+    <a href="games.html">Games & Apps</a>
+    <a href="collection.html">Collections</a>
+    <a href="feedback.html">Feedback</a>
+    </nav>
+    <script>
+        function toggleNav() {
+          var nav = document.querySelector('nav');
+              nav.classList.toggle('show');
+        }
+    </script>
+    </div>
+    </header>
+
+    <main>
+        <div class="slide-container">
+            
+        <div class="slide-wrapper">
+            <div class="slide">
+             <video class="slide-video" width="300" height="200" autoplay muted>
+                        <source src="videos\spider-man-across-the-spider-verse-trailer-2_h1080p.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+                    <div class="slide-text-overlay">
+                        <h3>SPIDERMAN ACROSS THE SPIDER VERSE TRAILER(2023)</h3>
+                        <a href="#" class="slide-link"></a>
+                    </div>
+                    <button class="play-btn" onclick="playVideo(this)">Play</button>
+                    
+                
+                </div>
+                <div class="slide">
+                    <video class="slide-video" width="300" height="200" autoplay muted>
+                        <source src="videos\blue-beetle-trailer-1_h1080p.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="slide-text-overlay">
+                        <h3>BLUE BEETLE TRAILER(2023)</h3>
+                        <a href="#" class="slide-link"></a>
+                    </div>
+                    <button class="play-btn" onclick="playVideo(this)">Play</button>
+                    <h3>BLUE BEETLE TRAILER(2023)</h3>
+                    
+                </div>
+                <div class="slide">
+                    <video class="slide-video" width="300" height="200" autoplay muted>
+                        <source src="videos\whats-love-got-to-do-with-it-trailer-1_h720p.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="slide-text-overlay">
+                        <h3>Whats Love Got To Do With It(2023)</h3>
+                        <a href="#" class="slide-link"></a>
+                    </div>
+
+                    <button class="play-btn" onclick="playVideo(this)">Play</button>
+                    
+                </div>
+                <div class="slide">
+                    <video class="slide-video" width="300" height="200" autoplay muted>
+                        <source src="videos\barbie-trailer-2_h720p.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="slide-text-overlay">
+                        <h3>movie name TRAILER(2023)</h3>
+                        <a href="#" class="slide-link"></a>
+                    </div>
+                    <button class="play-btn" onclick="playVideo(this)">Play/Pause Button</button>
+                    
+                </div>
+                
+               
+                <!-- Add more slides as needed -->
+            </div>
+            <button class="slide-button left" onclick="moveSlides(-1)">&#10094;</button>
+            <button class="slide-button right" onclick="moveSlides(1)">&#10095;</button>
+            </div>
+
+
+            <h1>MOVIES AIRING AT THE CINEMA</h1>
+            <div class="movie-container">
+            <section class="movie-card">
+                <div class="movie-card-img">
+                    <a href="Naruto Movie Description.html">
+                        <img src="Naruto1.jpg" alt="Mummies 2023">
+                    </a>
+                </div>
+                <h3>Naruto: The Tale Of Uzumaki Naruto</h3>
+                
+            </section>
+            
+            <section class="movie-card">
+                <div class="movie-card-img">
+                    <a href="#">
+                        <img src="Plane 2023 image.jpg" alt="Plane 2023">
+                    </a>
+                </div>
+                <h3>Plane</h3>
+
+                
+         
+            </section>
+        
+            <section class="movie-card">
+                <div class="movie-card-img">
+                    <a href="#">
+                        <img src="Godzilla.jpg" alt="John Wick 4">
+                    </a>
+                </div>
+                <h3>Godzilla</h3>
+                
+            </section>
+
+            <section class="movie-card">
+                <div class="movie-card-img">
+                    <a href="#">
+                        <img src="Flash 2023 image.jpg" alt="John Wick 4">
+                    </a>
+                </div>
+                
+                <h3>The Flash</h3>
+            </section>
+            
+            <section class="movie-card">
+                <div class="movie-card-img">
+                    <a href="#">
+                        <img src="Black Adam 2023 image.jpg" alt="Black Adam 2023">
+                    </a>
+                </div>
+                
+                <h3>Black Adam</h3>
+            </section>
+            <section class="movie-card">
+                <div class="movie-card-img">
+                    <a href="#">
+                        <img src="Batman.jpg" alt="Flash">
+                    </a>
+                </div>
+                <h3>The Batman</h3>
+                
+            </section>
+            
+            </div>
+            
+                        <h1>TV Shows and Movies</h1>
+                        <div class="movie-container">
+                            <section class="movie-card">
+                                <div class="movie-card-img">
+                                    <a href="Mummies Movie Description.html">
+                                        <img src="Euphoria.jpg" alt="You">
+                                    </a>
+                                </div>
+                                
+                                <h3>Euphoria</h3>
+                            </section>
+                            
+                            <section class="movie-card">
+                                <div class="movie-card-img">
+                                    <a href="#">
+                                        <img src="Inside 2023 image.webp" alt="The Brothers Warner">
+                                    </a>
+                                </div>
+                                <h3>Inside</h3> 
+                                
+                            </section>
+
+                            <section class="movie-card">
+                                <div class="movie-card-img">
+                                    <a href="#">
+                                        <img src="StartUp.jpg" alt="Start Up">
+                                    </a>
+                                </div>
+                                
+                                <h3>스타트업  창업 기업 창업 Start Up</h3>
+                            </section>
+                            
+                            <section class="movie-card">
+                                <div class="movie-card-img">
+                                    <a href="#">
+                                        <img src="Bojack.jpg" alt="Bojack">
+                                    </a>
+                                </div>
+                                <h3>Bojack</h3>
+                                
+                            </section>
+                            
+                            <section class="movie-card">
+                                <div class="movie-card-img">
+                                    <a href="#">
+                                        <img src="Mummies 2023 image.jpg" alt="Naruto">
+                                    </a>
+                                </div>
+                                
+                                <h3>Mummies</h3>
+                            </section>
+                            <section class="movie-card">
+                                <div class="movie-card-img">
+                                    <a href="#">
+                                        <img src="Lucifer.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvUlRUVjI3OTYxMS53ZWJw" alt="John Wick 4">
+                                    </a>
+                                </div>
+                                <h3>Lucifer</h3>
+                                
+                            </section>
+                            
+                            
+                                </div>
+                                <div class="faq-section">
+                                    <h4>Frequently Asked Questions</h4>
+                                    <details>
+                                      <summary>What is the Warner Bros website?</summary>
+                                      <p>The Warner Bros website is the official online platform for Warner Bros Entertainment Inc., featuring information on their movies, TV shows, games, and other multimedia content.</p>
+                                    </details>
+                                    <details>
+                                      <summary>How can I watch Warner Bros movies and TV shows?</summary>
+                                      <p>You can watch Warner Bros movies and TV shows through various streaming platforms and digital retailers, as well as on physical media like DVDs and Blu-rays. Some content may also be available on the Warner Bros website or their official YouTube channel.</p>
+                                    </details>
+                                    <details>
+                                      <summary>Where can I find news and updates about upcoming Warner Bros projects?</summary>
+                                      <p>You can stay updated on upcoming Warner Bros projects by following their social media accounts, signing up for their newsletter, and visiting their website for the latest news and announcements.</p>
+                                    </details>
+                                    <details>
+                                      <summary>How can I contact Warner Bros for support or inquiries?</summary>
+                                      <p>You can contact Warner Bros by visiting their official website and navigating to the "Contact Us" page. There, you will find contact information for various departments and support options.</p>
+                                    </details>
+                                  </div>
+                                  
+                                  <section class="tiles-container">
+                                    <div class="tile">
+                                        
+                                            <img src="popcorn image.jpg" alt="popcorn image">
+                                            <h3>Discover the latest blockbusters and timeless classics and enjoy.</h3>
+                                            
+                                        </a>
+                                    </div>
+                                    <div class="tile">
+                                        
+                                            <img src="download sign.avif" alt="Download sign image">
+                                            <h3>Explore and download from our collection of hit series and binge-worthy content</h3>
+                                            
+                                        </a>
+                                    </div>
+                                    <div class="tile">
+                                        
+                                            <img src="mini tv for WB.webp" alt="Mini tv image">
+                                            <h3>Experience the magic of our iconic animated features and series.</h3>
+                                            
+                                        </a>
+                                    </div>
+                                    <div class="tile">
+                                        
+                                            <img src="Games tile image.avif" alt="Documentaries">
+                                            <h3>Dive into captivating stories and explore the world around us.</h3>
+                                            
+                                        </a>
+                                    </div>
+                                </section> 
+                                 
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com/warnerbrosent" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/warnerbros" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/warnerbrosentertainment/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/warner-bros-entertainment" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                </div>                                    
+         </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section contact-details">
+                <h3>Contact Details</h3>
+                <p>
+                    Warner Bros. Entertainment Inc.<br>
+                    3400 W. Riverside Drive<br>
+                    Burbank, CA 91505<br> 
+                    Phone: (818) 954-6000<br>
+                    Email: contact@warnerbros.com
+                </p>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Warner Bros. Entertainment Inc. All rights reserved.
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

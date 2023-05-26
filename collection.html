@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections - Warner Bros.</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* CSS styles for the collections page */
+    
+    .collection-container {
+      display: flex;
+      overflow-x: hidden;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+      overflow-y: hidden; /* Hide vertical scrollbar */
+
+    }
+
+    .collection-card {
+      width: 200px;
+      text-align: center;
+      opacity: 0.7;
+      transition: opacity 0.3s;
+      border-radius: 20px;
+    }
+
+    .collection-card.center {
+      opacity: 1;
+      transform: scale(1.2);
+      z-index: 2;
+    }
+
+    .collection-card img {
+      width: 150px; /* Adjust the width as needed */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 20px;
+      transition: transform 0.3s; /* Add a transition for a smooth effect */
+
+    }
+
+    .collection-card img:hover {
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+}
+
+    .slider-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .slider-controls button {
+      background: none;
+      border: none;
+      color: aliceblue;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .footer {
+      padding: 20px;
+      background-color: #333333;
+      color: white;
+      text-align: center;
+      margin-top: 100px; /* Add margin to create space */
+    }
+
+    .footer-bottom {
+      margin-top: 20px;
+    }
+    .container {
+      display: flex;
+      border: 1px solid rgb(255, 255, 255); /* Add a border around the container */
+      border-radius: 10px;
+    }
+
+    .image {
+      flex: 1;
+      padding: 10px; /* Add padding around the image */
+      border-right: 1px solid rgb(255, 255, 255); /* Add a vertical border to separate the image and text */
+      background-image: url("Batsy.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .text {
+      flex: 1;
+      padding: 10px; /* Add padding around the text */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+        <a href="index.html" class="logo"><img src="Warner bros logo.png" alt="Warner Bros. Logo"></a>
+        <button class="nav-toggle" onclick="toggleNav()">&#9776;</button>
+    
+        <nav>
+        <a href="movies.html">Movies</a>
+        <a href="tvshows.html">TV Shows</a>
+        <a href="games.html">Games & Apps</a>
+        <a href="collection.html">Collections</a>
+        <a href="feedback.html">Feedback</a>
+        </nav>
+        <script>
+            function toggleNav() {
+              var nav = document.querySelector('nav');
+                  nav.classList.toggle('show');
+            }
+        </script>
+    </div>
+  </header>
+
+  <main>
+    <h1>Classic Of The Day</h1>
+
+    <section>
+    <div class="container">
+        <div class="image"></div>
+        <div class="text">
+          <p>"Inception" is a mind-bending sci-fi thriller directed by Christopher Nolan. The film follows Dom Cobb, a skilled thief who specializes in a dangerous form of corporate espionage. Instead of stealing information, Cobb and his team are hired to infiltrate the dreams of their targets and extract valuable secrets.
+
+            When Cobb is offered a chance to regain his old life in exchange for a seemingly impossible task - implanting an idea into someone's mind, known as "inception" - he assembles a team of experts to carry out the intricate heist. As they delve deeper into the dream world, the line between reality and the subconscious becomes increasingly blurred.
+            
+            Navigating surreal landscapes and battling their own inner demons, Cobb and his team face countless obstacles, including the relentless pursuit of an enigmatic antagonist. The film explores profound themes of memory, perception, and the power of the human mind.</p>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+      <h1>Featured Movie and Tv Show Classics (Top List)</h1>
+
+      <div class="slider-controls top-slider-controls">
+        <button id="prevButtonTop" class="slider-button">&#10094;</button>
+        <button id="nextButtonTop" class="slider-button">&#10095;</button>
+      </div>
+
+      <div class="collection-container top">
+        <div class="collection-card top">
+          <a href="Gameofthrones Collection Description.html">
+            <img src="Gameofthrones.jpg" alt="Game Of Thrones">
+          </a>
+          <h3>Game Of Thrones</h3>
+        </div>
+
+        <div class="collection-card top">
+          <a href="#">
+            <img src="house of wax.jpg" alt="House Of Wax">
+          </a>
+          <h3>House Of Wax</h3>
+        </div>
+
+        <div class="collection-card top center">
+          <a href="#">
+            <img src="hangover.jpg" alt="Hangover">
+          </a>
+          <h3>Hangover</h3>
+        </div>
+
+        <div class="collection-card top">
+          <a href="#">
+            <img src="the mask.jpg" alt="The Mask">
+          </a>
+          <h3>The Mask</h3>
+        </div>
+
+        <div class="collection-card top">
+            <a href="#">
+              <img src="Godzilla.jpg" alt="Godzilla">
+            </a>
+            <h3>Godzilla</h3>
+          </div>
+
+          <div class="collection-card top">
+            <a href="#">
+              <img src="Bridgerton.jpg" alt="Bridgerton">
+            </a>
+            <h3>Bridgerton</h3>
+          </div>
+
+          <div class="collection-card top">
+            <a href="#">
+              <img src="Euphoria.jpg" alt="Euphoria">
+            </a>
+            <h3>Euphoria</h3>
+          </div>
+
+        <div class="collection-card top">
+          <a href="#">
+            <img src="Inception.jpg" alt="Inception">
+          </a>
+          <h3>Inception</h3>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>Featured Game Classics (Bottom List)</h1>
+
+      <div class="slider-controls bottom-slider-controls">
+        <button id="prevButtonBottom" class="slider-button">&#10094;</button>
+        <button id="nextButtonBottom" class="slider-button">&#10095;</button>
+      </div>
+
+      <div class="collection-container bottom">
+        <div class="collection-card bottom">
+          <a href="#">
+            <img src="mortalkombat game.jpg" alt="Mortal Kombat">
+          </a>
+          <h3>Mortal Kombat</h3>
+        </div>
+
+        <div class="collection-card bottom">
+          <a href="#">
+            <img src="back 4 blood game.jpg" alt="Back 4 Blood">
+          </a>
+          <h3>Back 4 Blood</h3>
+        </div>
+
+        <div class="collection-card bottom center">
+          <a href="#">
+            <img src="Enter the matrix game.jpg" alt="Enter The Matrix">
+          </a>
+          <h3>Enter The Matrix</h3>
+        </div>
+
+        <div class="collection-card bottom">
+          <a href="#">
+            <img src="Ben10.jpg" alt="Ben10">
+          </a>
+          <h3>Ben 10</h3>
+        </div>
+
+        <div class="collection-card bottom">
+            <a href="#">
+              <img src="plantsvs zombies.jpg" alt="Plants vs Zombies">
+            </a>
+            <h3>Plants Vs Zombies</h3>
+          </div>
+
+          <div class="collection-card bottom">
+            <a href="#">
+              <img src="justice league game.jpg" alt="Justice League">
+            </a>
+            <h3>Justice League</h3>
+          </div>
+
+        <div class="collection-card bottom">
+          <a href="#">
+            <img src="fear 2.jpg" alt="Fear 2">
+          </a>
+          <h3>Fear 2</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section contact-details">
+        <h3>Contact Details</h3>
+        <p>
+          Warner Bros. Entertainment Inc.<br>
+          3400 W. Riverside Drive<br>
+          Burbank, CA 91505<br> 
+          Phone: (818) 954-6000<br>
+          Email: contact@warnerbros.com
+        </p>
+      </div>
+      <div class="footer-section quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2023 Warner Bros. Entertainment Inc. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const prevButtonTop = document.getElementById('prevButtonTop');
+    const nextButtonTop = document.getElementById('nextButtonTop');
+    const collectionContainerTop = document.querySelector('.collection-container.top');
+    const collectionCardsTop = Array.from(document.querySelectorAll('.collection-card.top'));
+    const centerIndexTop = Math.floor(collectionCardsTop.length / 2);
+
+    let currentSlideTop = centerIndexTop;
+
+    prevButtonTop.addEventListener('click', slidePrevTop);
+    nextButtonTop.addEventListener('click', slideNextTop);
+
+    function slidePrevTop() {
+      currentSlideTop--;
+      if (currentSlideTop < 0) {
+        currentSlideTop = collectionCardsTop.length - 1;
+      }
+      updateSliderTop();
+    }
+
+    function slideNextTop() {
+      currentSlideTop++;
+      if (currentSlideTop >= collectionCardsTop.length) {
+        currentSlideTop = 0;
+      }
+      updateSliderTop();
+    }
+
+    function updateSliderTop() {
+      const offsetTop = currentSlideTop - centerIndexTop;
+      collectionContainerTop.style.transform = `translateX(-${offsetTop * 220}px)`;
+
+      collectionCardsTop.forEach((card, index) => {
+        if (index === currentSlideTop) {
+          card.classList.add('center');
+        } else {
+          card.classList.remove('center');
+        }
+      });
+    }
+
+    const prevButtonBottom = document.getElementById('prevButtonBottom');
+    const nextButtonBottom = document.getElementById('nextButtonBottom');
+    const collectionContainerBottom = document.querySelector('.collection-container.bottom');
+    const collectionCardsBottom = Array.from(document.querySelectorAll('.collection-card.bottom'));
+    const centerIndexBottom = Math.floor(collectionCardsBottom.length / 2);
+
+    let currentSlideBottom = centerIndexBottom;
+
+    prevButtonBottom.addEventListener('click', slidePrevBottom);
+    nextButtonBottom.addEventListener('click', slideNextBottom);
+
+    function slidePrevBottom() {
+      currentSlideBottom--;
+      if (currentSlideBottom < 0) {
+        currentSlideBottom = collectionCardsBottom.length - 1;
+      }
+      updateSliderBottom();
+    }
+
+    function slideNextBottom() {
+      currentSlideBottom++;
+      if (currentSlideBottom >= collectionCardsBottom.length) {
+        currentSlideBottom = 0;
+      }
+      updateSliderBottom();
+    }
+
+    function updateSliderBottom() {
+      const offsetBottom = currentSlideBottom - centerIndexBottom;
+      collectionContainerBottom.style.transform = `translateX(-${offsetBottom * 220}px)`;
+
+      collectionCardsBottom.forEach((card, index) => {
+        if (index === currentSlideBottom) {
+          card.classList.add('center');
+        } else {
+          card.classList.remove('center');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
